@@ -1,0 +1,84 @@
+/* styles.css */
+/* --- Global Styles & Background --- */
+.stApp {
+    background: linear-gradient(rgba(14, 17, 23, 0.85), rgba(14, 17, 23, 0.85)), 
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2048&auto=format&fit=crop");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #e6edf3;
+}
+
+/* --- Register View (IDE Style) --- */
+.reg-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.reg-box {
+    flex: 1 1 calc(50% - 10px); /* Two columns */
+    background-color: rgba(33, 38, 45, 0.6);
+    border: 1px solid #444c56;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.reg-box:hover {
+    background-color: rgba(48, 54, 61, 0.8);
+    border-color: #58a6ff;
+}
+
+/* ABI Groupings */
+.group-special { border-left: 4px solid #007bff !important; }
+.group-temp { border-left: 4px solid #fd7e14 !important; }
+.group-saved { border-left: 4px solid #6f42c1 !important; }
+.group-args { border-left: 4px solid #20c997 !important; }
+
+.reg-nonzero { 
+    background-color: rgba(40, 167, 69, 0.15) !important; 
+    border-color: #28a745 !important;
+}
+
+/* --- Memory View --- */
+.mem-view {
+    font-family: 'Fira Code', monospace;
+    background-color: rgba(13, 17, 23, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.mem-row {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.mem-word-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: rgba(48, 54, 61, 0.3);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+.mem-addr { color: #8b949e; font-size: 0.8rem; margin-right: 12px; }
+.mem-hex { font-weight: bold; color: #58a6ff; }
+.mem-disasm { color: #aff5b4; margin-left: 15px; font-style: italic; }
+
+.pc-highlight {
+    border: 1px solid #f1c40f !important;
+    background-color: rgba(241, 196, 15, 0.1) !important;
+    box-shadow: 0 0 8px rgba(241, 196, 15, 0.2);
+}
+
+.sp-highlight {
+    border: 1px solid #fd7e14 !important;
+    background-color: rgba(253, 126, 20, 0.1) !important;
+}
