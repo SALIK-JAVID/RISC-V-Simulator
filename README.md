@@ -122,31 +122,31 @@ This simulator implements the **RV32I** base integer instruction set, which incl
 ┌─────────────────────────────────────┐
 │      RISC-V RV32I Processor         │
 │                                     │
-│  ┌───────────────────────────┐     │
-│  │   Register File (32 regs) │     │
-│  │   x0 = 0 (hardwired)      │     │
-│  │   x1, x2, ..., x31        │     │
-│  └───────────────────────────┘     │
+│  ┌───────────────────────────┐      │
+│  │   Register File (32 regs) │      │
+│  │   x0 = 0 (hardwired)      │      │
+│  │   x1, x2, ..., x31        │      │
+│  └───────────────────────────┘      │
 │                                     │
-│  ┌───────────────────────────┐     │
-│  │   Program Counter (PC)    │     │
-│  │   Points to next instr.   │     │
-│  └───────────────────────────┘     │
+│  ┌───────────────────────────┐      │
+│  │   Program Counter (PC)    │      │
+│  │   Points to next instr.   │      │
+│  └───────────────────────────┘      │
 │                                     │
-│  ┌───────────────────────────┐     │
-│  │   Memory (RAM)            │     │
-│  │   Stores data & programs  │     │
-│  └───────────────────────────┘     │
+│  ┌───────────────────────────┐      │
+│  │   Memory (RAM)            │      │
+│  │   Stores data & programs  │      │
+│  └───────────────────────────┘      │
 │                                     │
-│  ┌───────────────────────────┐     │
-│  │   Instruction Decoder     │     │
-│  │   Interprets binary       │     │
-│  └───────────────────────────┘     │
+│  ┌───────────────────────────┐      │
+│  │   Instruction Decoder     │      │
+│  │   Interprets binary       │      │
+│  └───────────────────────────┘      │
 │                                     │
-│  ┌───────────────────────────┐     │
-│  │   ALU (Arithmetic Logic)  │     │
-│  │   Performs operations     │     │
-│  └───────────────────────────┘     │
+│  ┌───────────────────────────┐      │
+│  │   ALU (Arithmetic Logic)  │      │
+│  │   Performs operations     │      │
+│  └───────────────────────────┘      │
 └─────────────────────────────────────┘
 ```
 
