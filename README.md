@@ -2,8 +2,7 @@
 
 <div align="center">
   <img src="/images/RISC-V-logo.svg.png" alt="RISC-V Simulator Title" width="800"/>
-  <br/>
-  <img src="/images/Scheme-2-1-1.svg" alt="RV32I Architecture" width="800"/>
+
 </div>
 
 ---
